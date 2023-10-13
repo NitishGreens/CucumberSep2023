@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="27.236804">
+    <testcase classname="Verify Adactin Hotel Login Page" name="Verify Login Page With Valid Credential" time="7.993331">
+        <failure message="java.lang.AssertionError: verify&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at com.stepdefinition.LoginSteps.user_verify_login_success_message(LoginSteps.java:37)&#13;&#10;&#9;at ✽.User verify login success message(file:src/test/resources/Features/TC1_AdactinHotel_Login.feature:10)&#13;&#10;"><![CDATA[Given User is on adactin login page.........................................passed
+When User enters username and password and click on login button............passed
+Then User verify login success message......................................failed
+
+StackTrace:
+java.lang.AssertionError: verify
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.stepdefinition.LoginSteps.user_verify_login_success_message(LoginSteps.java:37)
+	at ✽.User verify login success message(file:src/test/resources/Features/TC1_AdactinHotel_Login.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="Verify Adactin Hotel Login Page" name="Verify Login Page With Invalid Credential" time="11.619856">
+        <failure message="java.lang.AssertionError: verify&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at com.stepdefinition.LoginSteps.user_verify_login_success_message(LoginSteps.java:37)&#13;&#10;&#9;at ✽.User verify login success message(file:src/test/resources/Features/TC1_AdactinHotel_Login.feature:18)&#13;&#10;"><![CDATA[Given User is on adactin login page.........................................passed
+When User enters username and password and click on login button............passed
+Then User verify login success message......................................failed
+
+StackTrace:
+java.lang.AssertionError: verify
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.stepdefinition.LoginSteps.user_verify_login_success_message(LoginSteps.java:37)
+	at ✽.User verify login success message(file:src/test/resources/Features/TC1_AdactinHotel_Login.feature:18)
+]]></failure>
+    </testcase>
+    <testcase classname="Verify Adactin Hotel Search Page" name="Validate Search Hotel with valid information" time="7.623617">
+        <system-out><![CDATA[Given User is on adactin login page.........................................passed
+When User enters "nitish123" and "O55U1Z" and click on login button.........passed
+And User select "Sydney","Hotel Creek","Standard","2 - Two","2 - Two" and "2 - Two".passed
+And User click on search Button.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
